@@ -15,14 +15,29 @@ import Modal from '../components/modal'
 // )
 
 class IndexPage extends React.Component {
+  state = {
+    hidden: 'open',
+  }
+
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({ hidden: 'closed' })
+    }, 3000)
+
+    console.log('hey beautiful, thanks for visiting')
+  }
   render() {
+    const { hidden } = this.state
     return (
       <Layout>
         <div className="container">
-          <div className="circle">developer</div>
+          <div className="circle">
+            <p className="name">Dan Shafie</p>
+            <p className="developer">developer</p>
+          </div>
           <Footer />
         </div>
-        <Modal />
+        <Modal hidden={hidden} />
       </Layout>
     )
   }
