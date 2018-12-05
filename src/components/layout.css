@@ -637,7 +637,7 @@ pre tt:after {
 .container {
   background-image: url('../images/compressss.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: 40% 50%;
   width: 100vw;
   height: 100vh;
   filter: grayscale(80%);
@@ -666,6 +666,20 @@ pre tt:after {
 .footer-links {
   list-style-type: none;
   display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+.email a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'UmbaSoft';
+  font-size: 1.2rem;
+}
+
+.email a:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 li a svg {
