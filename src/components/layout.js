@@ -34,7 +34,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
 
-        <div class="helmet_class">{children}</div>
+        <div className="helmet_class">{children}</div>
       </>
     )}
   />
